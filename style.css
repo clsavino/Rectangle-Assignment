@@ -1,39 +1,52 @@
-
-<!DOCTYPE html>
-<html>
-<!--
-  * Please see the included README.md file for license terms and conditions.
-  -->
-<head>
-    <title>Rectangle Assignment</title>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-
-    <link rel="stylesheet"type="text/css"  href="css/style.css">
-</head>
-
-<body>
-    
-    <h1> Basic Webpage with Rectangles</h1>
-    
-    <div id="rect1">
-        <h2>Rectangle 1</h2>
-        <h3>background: radial-gradient(circle, red, yellow, green)</h3>
-        <h3>background: red if radial-gradient not supported<h3>
-    </div>
-    
-    <div id="rect2">
-        <h2>Rectangle 2</h2>
-        <h3>border-style: dotted double dashed ridge</h3>
-        
-        
-    </div>
-    
-    <div id='rect3'>
-        <h2>Rectangle 3</h2>
-        <h3>border-radius: 25px</h3>
-    </div>
-    
-    
-
-</body>
-</html>
+body {
+    margin:0;
+    display: block;
+}
+h1 {
+    color: darkblue;
+    text-align: left;
+    padding: 50px;
+}
+div {
+    text-align: center;
+    color: #888888;
+    display: block;
+}
+h2, h3 {
+    text-align: center;
+    color: #303030;
+    font-size: 20px;
+    font-weight: bold;
+}
+#rect1 {
+    height: 150px;
+    width: 500px;
+    margin: 5rem;
+    padding: 1rem;
+    border-style: groove;
+    border-color: red;
+    border-width: 15px;
+    background: red; /* for browsers that don't support gradient*/
+    background: radial-gradient(circle, red, yellow, green);
+}
+#rect2 {
+    height: 100px;
+    width: 400px;
+    margin: 5rem;
+    padding: 2rem;
+    border-style: dotted double dashed ridge;
+    border-color: mediumpurple;
+    border-width: 5px;
+    background: yellow;
+}
+#rect3 {
+    height:100px;
+    width: 300px;
+    margin: 5rem;
+    padding: 3rem;
+    border-style: solid;
+    border-color: palevioletred;
+    border-width: 15px;
+    border-radius: 25px;
+    background: lightskyblue;
+}
